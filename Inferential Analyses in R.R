@@ -362,6 +362,8 @@ anova(GEE)
 OW_ANOVA <- aov(A1Age ~ Sex, data = STIData) 
 summary(OW_ANOVA)
 coefficients(OW_ANOVA)
+TukeyHSD(OW_ANOVA)
+plot(TukeyHSD(OW_ANOVA))
 
 # 1.ii) Two way ANOVA ----
 TW_ANOVANoInteraction <- aov(A1Age ~ Sex+A5MaritalStatus, data = STIData) #Without interaction
@@ -371,9 +373,12 @@ TW_ANOVAInteraction <- aov(A1Age ~ Sex+A5MaritalStatus:Sex*A5MaritalStatus, data
 summary(TW_ANOVAInteraction)
 coefficients(TW_ANOVAInteraction)
 
+
 TW_ANOVAInteraction <- aov(A1Age ~ Sex*A5MaritalStatus, data = STIData) #With interaction
 summary(TW_ANOVAInteraction)
 coefficients(TW_ANOVAInteraction)
+TukeyHSD(TW_ANOVAInteraction)
+plot(TukeyHSD(TW_ANOVAInteraction))
 
 # 1.iii) Repeated measures ANOVA ----
 
