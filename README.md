@@ -1,2 +1,2 @@
-# Data Management and Analysis-in-R
+Inferential Analysis-in-R
 
