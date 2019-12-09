@@ -1,2 +1,2 @@
-# Inferential-Analysis-in-R
-Inferential Analyses in R
+# Data Management, Descrtiptive and Inferential-Analysis-in-R
+
